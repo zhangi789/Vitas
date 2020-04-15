@@ -1,5 +1,6 @@
 package com.pandora.cn.widget;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
@@ -9,9 +10,9 @@ import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.widget.AppCompatTextView;
 
 import com.pandora.cn.BasicUtil;
 import com.pandora.cn.R;
@@ -22,8 +23,8 @@ import com.pandora.cn.R;
  * description   android自定义圆角矩形背景按钮，避免创建大量不可复用的shape.xml
  *
  */
-
-public class ShapeTextView extends AppCompatTextView {
+@SuppressLint("AppCompatCustomView")
+public class ShapeTextView extends TextView {
 
     public static final int TAG_FILL_TYPE = 1;//背景填充满
 
